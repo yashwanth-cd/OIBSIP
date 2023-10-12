@@ -1,0 +1,137 @@
+section {
+  padding-top: 80px;
+}
+/* SECTION-1 */
+#first-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 35px;
+}
+.left-body {
+  margin-left: 70px;
+}
+.right-body {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.devImage {
+  height: 500px;
+}
+main h1 {
+  justify-content: center;
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+  min-width: 800px;
+}
+#element {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+/* SECTION-2 */
+
+#second-section,
+#third-section,
+#fourth-section {
+  margin: 0 120px;
+}
+#second-section,
+#third-section,
+#fourth-section h3 {
+  font-size: 2.2rem;
+}
+#second-section .box,
+#third-section .box,
+#fourth-section .box {
+  background: white;
+  height: 1px;
+  margin: 20px 0;
+}
+.about-me-section,
+.projects-section {
+  margin: 50px 60px;
+  font-size: 22px;
+}
+.about-me-section p {
+  margin-bottom: 20px;
+}
+
+/* SECTION-3 */
+.project-names {
+  display: flex;
+  justify-content: space-around;
+  /* margin: 30px 60px; */
+}
+.projects-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid 2px white;
+  margin: 35px 0;
+}
+.projects img {
+  width: 400px;
+  object-fit: contain;
+  height: 100%;
+}
+
+.projects img:hover {
+  cursor: pointer;
+}
+.projects h3 {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0px;
+}
+#project1,
+#project2,
+.project3 {
+  position: relative;
+}
+
+#project1:hover,
+#project2:hover,
+#project3:hover {
+  cursor: pointer;
+  z-index: 50;
+  transform: scale(1.05);
+  transition: transform 0.3s;
+  border: solid 1px rgb(185, 122, 244);
+  transition: transform 0.2s, scale 0.2s;
+}
+
+/* SECTION-4 */
+.contact-details {
+  margin-top: 50px;
+}
+.mail,
+.linkedin,
+.whatsapp {
+  display: flex;
+  margin-top: 30px;
+}
+.mail-icon {
+  height: 35px;
+  margin-right: 15px;
+}
+.mail p,
+.linkedin p {
+  margin-top: 5px;
+  margin-right: 20px;
+}
+.link-icon {
+  height: 28px;
+}
+.link-icon:hover {
+  cursor: pointer;
+}
