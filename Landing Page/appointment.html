@@ -74,32 +74,45 @@
   <div class="form-div">
     <form style="display: block;">
       <label for="name"></label><br>
-      <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+      <input type="text" id="appointment-name" name="name" placeholder="Name" required><br><br>
 
       <label for="email"></label><br>
-      <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+      <input type="email" id="appointment-email" name="email" placeholder="Email" required><br><br>
 
       <label for="date"></label><br>
-      <input type="date" id="date" name="date" placeholder="Date" required><br><br>
+      <input type="date" id="appointment-date" name="date" placeholder="Date" required><br><br>
 
       <label for="time"></label><br>
-      <input type="time" id="time" name="time" placeholder="Time" required><br><br>
+      <input type="time" id="appointment-time" name="time" placeholder="Time" required><br><br>
 
-      <button class="btn btn-book" id="btn-sub">Book</button>
+      <button class="btn btn-book" id="book">Book</button>
       <button class="btn btn-home" id="home">Home</button>
     </form>
   </div>
   <script>
-    const subscribe = document.getElementById('btn-sub');
     const buttonEvent = document.getElementById('home');
-
-    subscribe.addEventListener('click', function () {
-      alert('Thanks for Booking Your Appointment. Our Service On Your Way! 🚀');
-    });
     buttonEvent.addEventListener('click', function () {
       window.location.href = 'index.html';
     });
+
+    const bookAppointment = document.getElementById('book');
+    const nameOfAppointment = document.getElementById('appointment-name');
+    const emailOfAppointment = document.getElementById('appointment-email');
+    const dateOfAppointment = document.getElementById('appointment-date');
+    const timeOfAppointment = document.getElementById('appointment-time');
+    bookAppointment.addEventListener('click', function () {
+      const nameA = nameOfAppointment.value.trim();
+      const email = emailOfAppointment.value.trim();
+      const date = dateOfAppointment.value.trim();
+      const time = timeOfAppointment.value.trim();
+      if (nameA !== '' && email !== '' && date !== '' && time !== '') {
+        alert('Thanks for Booking Your Appointment. Our Service On Your Way! 🚀');
+      } else {
+        alert('Please Enter all Appointment Details');
+      }
+    });
   </script>
+  <script src="script.js"></script>
 </body>
 
 </html>
