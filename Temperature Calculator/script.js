@@ -117,5 +117,7 @@ convertButton.addEventListener("click", function () {
   } else {
     result.textContent = "0.00";
     errorMessage.style.opacity = 100;
+    inputOption.selectedIndex = 0;
+    outputOption.selectedIndex = 0;
   }
 });
