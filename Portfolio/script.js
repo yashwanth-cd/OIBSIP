@@ -53,3 +53,8 @@ linkedIn.addEventListener("click", function () {
     "_blank"
   );
 });
+
+const facebook = document.getElementById("facebook-link");
+linkedIn.addEventListener("click", function () {
+  window.open("https://www.facebook.com/yashwanth.sai.1217/", "_blank");
+});
