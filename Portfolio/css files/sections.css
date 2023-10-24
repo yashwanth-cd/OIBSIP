@@ -1,0 +1,154 @@
+section {
+  padding-top: 80px;
+}
+/* SECTION-1 */
+#first-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#first-section .left-div {
+  display: flex;
+  flex-direction: column;
+}
+
+#first-section .left-div a {
+  text-decoration: none;
+  padding: 6px 18px;
+  font-size: 17px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  background-color: blueviolet;
+  transition: color 0.3s, background-color 0.3s;
+}
+#first-section .left-div a:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+#first-section .left-div .more-info-div {
+  padding: 50px 100px;
+}
+.left-body {
+  margin-left: 70px;
+}
+.right-body {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.right-body img {
+  /* padding-top: 30px; */
+  border-radius: 50rem;
+}
+.devImage {
+  height: 550px;
+}
+main h1 {
+  justify-content: center;
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+  min-width: 800px;
+}
+#element {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+/* SECTION-2 */
+
+#second-section,
+#third-section,
+#fourth-section {
+  margin: 0 120px;
+}
+#second-section,
+#third-section,
+#fourth-section h3 {
+  font-size: 2.2rem;
+}
+#second-section .box,
+#third-section .box,
+#fourth-section .box {
+  background: white;
+  height: 1px;
+  margin: 20px 0;
+}
+.about-me-section,
+.projects-section {
+  margin: 50px 60px;
+  font-size: 22px;
+}
+.about-me-section p {
+  margin-bottom: 20px;
+}
+
+/* SECTION-3 */
+.project-names {
+  display: flex;
+  justify-content: space-around;
+  /* margin: 30px 60px; */
+}
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: solid 2px white;
+  margin: 35px 0;
+}
+.projects img {
+  width: 400px;
+  object-fit: contain;
+  height: 100%;
+}
+.projects-section .project-description {
+  display: flex;
+  align-items: center;
+}
+.projects-section p {
+  min-width: 600px;
+  padding: 0 50px;
+}
+.projects img:hover {
+  cursor: pointer;
+}
+.projects h3 {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0px;
+}
+
+/* SECTION-4 */
+.contact-details {
+  margin-top: 50px;
+}
+.mail,
+.linkedin,
+.whatsapp {
+  display: flex;
+  margin-top: 30px;
+}
+.mail-icon {
+  height: 35px;
+  margin-right: 15px;
+}
+.mail p,
+.linkedin p {
+  margin-top: 5px;
+  margin-right: 20px;
+}
+.link-icon {
+  height: 28px;
+}
+.link-icon:hover {
+  cursor: pointer;
+}

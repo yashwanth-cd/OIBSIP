@@ -1,0 +1,51 @@
+/* HEADER */
+
+span {
+  color: rgb(255, 129, 255);
+  margin: 0 10px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+  width: 100%;
+  align-items: center;
+  background-color: blueviolet;
+  position: fixed;
+  margin-right: 0;
+  z-index: 100;
+}
+header h1 {
+  color: white;
+  margin-left: 50px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}
+ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  color: white;
+}
+ul li {
+  font-size: 17px;
+  font-weight: bold;
+}
+ul li a {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 6px 16px;
+  cursor: pointer;
+  color: white;
+  background-color: blueviolet;
+  transition: color 0.3s, background-color 0.3s;
+}
+ul li a:hover {
+  color: black;
+  background-color: white;
+}
+.right-header {
+  margin-right: 100px;
+}
