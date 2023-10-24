@@ -28,7 +28,11 @@ section {
   color: black;
 }
 #first-section .left-div .more-info-div {
-  padding: 50px 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  padding: 30px 20px;
+  flex: none;
 }
 .left-body {
   margin-left: 70px;
@@ -60,16 +64,19 @@ main h1 {
 /* SECTION-2 */
 
 #second-section,
+#skills-section,
 #third-section,
 #fourth-section {
   margin: 0 120px;
 }
 #second-section,
+#skills-section,
 #third-section,
 #fourth-section h3 {
   font-size: 2.2rem;
 }
 #second-section .box,
+#skills-section .box,
 #third-section .box,
 #fourth-section .box {
   background: white;
@@ -82,14 +89,41 @@ main h1 {
   font-size: 22px;
 }
 .about-me-section p {
-  margin-bottom: 20px;
+  padding-bottom: 30px;
+  min-width: 800px;
+}
+
+/* SKILLS SECTION */
+.skills-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  padding-top: 60px;
+}
+#skills-section .skills {
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  border-radius: 1rem;
+  padding: 30px 0;
+  min-width: 450px;
+  background-color: rgb(201, 155, 243);
+}
+#skills-section h5 {
+  padding: 0.8rem 0;
+}
+#skills-section .skills p {
+  padding: 0 20px;
+  text-align: center;
+  font-size: 18px;
 }
 
 /* SECTION-3 */
 .project-names {
   display: flex;
   justify-content: space-around;
-  /* margin: 30px 60px; */
 }
 .projects-section {
   display: flex;
@@ -143,15 +177,15 @@ main h1 {
   height: 35px;
   margin-right: 15px;
 }
-i {
-  margin-right: 15px;
-}
 .mail p,
 .linkedin p,
 .facebook p,
 .instagram p {
   margin-top: 5px;
   margin-right: 20px;
+}
+#fourth-section i {
+  padding-right: 20px;
 }
 .link-icon {
   height: 28px;
