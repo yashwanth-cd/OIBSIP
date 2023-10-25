@@ -13,7 +13,7 @@ project2.addEventListener("click", function () {
 const project3 = document.getElementById("project3");
 project3.addEventListener("click", function () {
   window.open(
-    "https://yashwanth-cd.github.io/OIBSIP/Landing Page - FurryStop/",
+    "https://yashwanth-cd.github.io/OIBSIP/Landing Page/",
     "_blank"
   );
 });
