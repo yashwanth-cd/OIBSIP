@@ -72,48 +72,41 @@ inputTemp.addEventListener("keyup", function (event) {
 // CONVERT BUTTON
 convertButton.addEventListener("click", function () {
   const input = Number(inputTemp.value);
-   if (
-      selectedInputType === "Celcius" &&
-      selectedOutputType === "Fahrenheit"
-    ) {
-      celciusToFahren(input);
-      errorMessage.style.opacity = 0;
-    } else if (
-      selectedInputType === "Fahrenheit" &&
-      selectedOutputType === "Celcius"
-    ) {
-      fahrenToCelcius(input);
-      errorMessage.style.opacity = 0;
-    } else if (
-      selectedInputType === "Kelvin" &&
-      selectedOutputType === "Celcius"
-    ) {
-      kelvinToCelcius(input);
-      errorMessage.style.opacity = 0;
-    } else if (
-      selectedInputType === "Celcius" &&
-      selectedOutputType === "Kelvin"
-    ) {
-      celciusToKelvin(input);
-      errorMessage.style.opacity = 0;
-    } else if (
-      selectedInputType === "Fahrenheit" &&
-      selectedOutputType === "Kelvin"
-    ) {
-      fahrenToKelvin(input);
-      errorMessage.style.opacity = 0;
-    } else if (
-      selectedInputType === "Kelvin" &&
-      selectedOutputType === "Fahrenheit"
-    ) {
-      kelvinToFahren(input);
-      errorMessage.style.opacity = 0;
-    }
-  } else {
+  if (input && typeof input === "number") {
+    const selectedInputType =
+      inputOption.options[inputOption.selectedIndex].value;
+    const selectedOutputType =
+      outputOption.options[outputOption.selectedIndex].value;
+   switch (true) {
+  case selectedInputType === "Celcius" && selectedOutputType === "Fahrenheit":
+    celciusToFahren(input);
+    errorMessage.style.opacity = 0;
+    break;
+  case selectedInputType === "Fahrenheit" && selectedOutputType === "Celcius":
+    fahrenToCelcius(input);
+    errorMessage.style.opacity = 0;
+    break;
+  case selectedInputType === "Kelvin" && selectedOutputType === "Celcius":
+    kelvinToCelcius(input);
+    errorMessage.style.opacity = 0;
+    break;
+  case selectedInputType === "Celcius" && selectedOutputType === "Kelvin":
+    celciusToKelvin(input);
+    errorMessage.style.opacity = 0;
+    break;
+  case selectedInputType === "Fahrenheit" && selectedOutputType === "Kelvin":
+    fahrenToKelvin(input);
+    errorMessage.style.opacity = 0;
+    break;
+  case selectedInputType === "Kelvin" && selectedOutputType === "Fahrenheit":
+    kelvinToFahren(input);
+    errorMessage.style.opacity = 0;
+    break;
+  default:
     result.textContent = "0.00";
     errorMessage.style.opacity = 100;
     inputOption.selectedIndex = 0;
     outputOption.selectedIndex = 0;
-  }
-
+}
 });
+
