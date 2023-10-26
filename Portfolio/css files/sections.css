@@ -20,12 +20,13 @@ section {
   font-weight: bold;
   color: white;
   background-color: blueviolet;
-  transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s, transform 0.25s;
 }
 #first-section .left-div a:hover {
   cursor: pointer;
-  background-color: white;
   color: black;
+  background-color: white;
+  transform: scale(1.06);
 }
 #first-section .left-div .more-info-div {
   display: flex;
