@@ -1,8 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: borde-box;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+body {
+  overflow-x: hidden;
+  width: 100%;
 }
 .section-1 {
   width: 100%;
@@ -18,8 +22,8 @@
 header {
   position: relative;
   top: 0;
-  width: 85%;
-  padding: 30px 100px;
+  width: 100%;
+  padding: 30px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -160,10 +164,11 @@ label {
   font-weight: 550;
 }
 .recent-grooms {
-  padding-left: 120px;
+  /* padding-left: 120px; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 50px;
+  justify-content: center;
 }
 
 /* SECTION-3 */
@@ -190,8 +195,6 @@ label {
 .section-3 .all-services {
   display: flex;
   justify-content: left;
-  max-width: 1200px;
-  min-width: 1000px;
 }
 .section-3 .services {
   padding-top: 50px;
@@ -200,21 +203,18 @@ label {
 
 /* NEWSLETTER FORM  */
 .newsletter {
-  margin-left: 70px;
-  margin-right: 70px;
   text-align: center;
   font-size: 18px;
 }
 .form-div {
-  margin-left: 70px;
-  margin-right: 70px;
   display: flex;
   justify-content: center;
 }
 input {
   border: solid 3px #226a80;
   padding: 10px;
-  width: 300px;
+  width: 280px;
+  font-weight: 600;
 }
 .section-4 {
   padding: 40px 100px;
@@ -224,13 +224,9 @@ input {
   color: #226a80;
   padding: 30px 0;
 }
-.section-4 p {
-  min-width: 1200px;
-}
 .section-4 a {
   color: black;
   background-color: rgb(242, 242, 242);
-  margin-left: 85px;
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 1px;
@@ -321,6 +317,7 @@ footer {
   header .logo {
     position: absolute;
     bottom: -6px;
+    left: 100px;
   }
   header .paw {
     position: absolute;
@@ -354,6 +351,47 @@ footer {
   }
 
   .content .info p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1260px) {
+  .recent-grooms {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+  }
+}
+
+@media (max-width: 680px) {
+  .recent-grooms {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section-3 .all-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  .section-4 {
+    padding: 30px 40px;
+  }
+  .section-4 .h1 {
+    font-size: 16px;
+  }
+
+  .newsletter {
+    text-align: center;
     font-size: 14px;
   }
 }
