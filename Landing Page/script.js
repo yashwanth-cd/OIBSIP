@@ -36,12 +36,20 @@ facebook.addEventListener("click", function () {
 // Newsletter details check
 const inputEmail = document.getElementById("email");
 const subscribeBtn = document.getElementById("btn-subscribe");
-subscribeBtn.addEventListener("click", function () {
+function subEvent() {
   const email = inputEmail.value.trim();
   if (email !== "" && email.includes("@")) {
     alert("Thank You for Subscribing to our Newsletter ✉️");
   } else {
     alert("Please Enter Your Email");
+  }
+  inputEmail.blur();
+  inputEmail.value = "";
+}
+subscribeBtn.addEventListener("click", subEvent);
+inputEmail.addEventListener("keypress", function (event) {
+  if (event.keyCode === 13) {
+    subEvent();
   }
 });
 
@@ -63,3 +71,4 @@ whatsappContact.addEventListener("click", function () {
 facebookContact.addEventListener("click", function () {
   window.open("https://www.facebook.com/yashwanth.sai.1217/", "_blank");
 });
+
