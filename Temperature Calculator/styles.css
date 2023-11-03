@@ -4,13 +4,13 @@
   font-family: poppins, Arial;
 }
 body {
-  background-color: #35c2af;
+  background-color: #dbd8f0;
 }
 
 /* HEADER */
 
 h1 {
-  background-color: #00b79e;
+  background-color: #7fbeeb;
   text-align: center;
   padding: 1.02rem 0;
   font-weight: 700;
@@ -124,11 +124,11 @@ select {
   border-radius: 0.8rem;
   padding: 0.8rem 16rem;
   cursor: pointer;
-  background-color: #e2b9c6;
+  background-color: #7fbeeb;
   transition: background-color 0.25s;
 }
 .convert:hover {
-  background-color: #76e4d6;
+  background-color: #cac4ef;
 }
 
 /* FOOTER */
