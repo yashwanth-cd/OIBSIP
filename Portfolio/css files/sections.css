@@ -24,9 +24,9 @@ section {
 }
 #first-section .left-div a:hover {
   cursor: pointer;
-  color: black;
-  background-color: white;
   transform: scale(1.06);
+  background-color: white;
+  color: black;
 }
 #first-section .left-div .more-info-div {
   display: flex;
@@ -110,7 +110,7 @@ main h1 {
   border-radius: 1rem;
   padding: 30px 0;
   min-width: 450px;
-  background-color: rgb(201, 155, 243);
+  background-color: #41037b;
 }
 #skills-section h5 {
   padding: 0.8rem 0;
