@@ -59,7 +59,7 @@ const whatsappContact = document.getElementById("whatsapp-contact");
 const linkedInContact = document.getElementById("linked-in-contact");
 linkedInContact.addEventListener("click", function () {
   window.open(
-    "https://www.linkedin.com/in/yashwanth-sai-c-5562851b2/",
+    "https://www.linkedin.com/in/yashwanth-sai-chuppala3270/",
     "_blank"
   );
 });
