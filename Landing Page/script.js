@@ -1,3 +1,6 @@
+const section2 = document.querySelector(".section-2");
+const navbar = document.querySelector(".nav-bar");
+
 // Adding smooth scrolling to anchor links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
@@ -72,3 +75,14 @@ facebookContact.addEventListener("click", function () {
   window.open("https://www.facebook.com/yashwanth.sai.1217/", "_blank");
 });
 
+// Implementing a sticky Nav bar
+const section2Coords = section2.getBoundingClientRect();
+console.log(section2Coords);
+
+window.addEventListener("scroll", function () {
+  if (section2Coords.top < window.scrollY) {
+    navbar.classList.add("nav-bar-sticky");
+  } else {
+    navbar.classList.remove("nav-bar-sticky");
+  }
+});
