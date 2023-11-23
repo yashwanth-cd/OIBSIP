@@ -44,8 +44,9 @@ section {
   justify-content: center;
 }
 .right-body img {
-  /* padding-top: 30px; */
-  border-radius: 50rem;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  border-radius: 20rem;
 }
 .devImage {
   height: 550px;
