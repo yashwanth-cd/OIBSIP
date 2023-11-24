@@ -49,7 +49,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 const linkedIn = document.getElementById("linkedin-link");
 linkedIn.addEventListener("click", function () {
   window.open(
-    "https://www.linkedin.com/in/yashwanth-sai-c-5562851b2/",
+    "https://www.linkedin.com/in/yashwanth-sai-c32/",
     "_blank"
   );
 });
