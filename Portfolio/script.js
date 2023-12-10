@@ -31,6 +31,11 @@ project5.addEventListener("click", function () {
   window.open("https://yashwanth-cd.github.io/BankistApplication/", "_blank");
 });
 
+const project6 = document.getElementById("project6");
+project6.addEventListener("click", function () {
+  window.open("https://yashwanth-cd.github.io/MaptyApplication/", "_blank");
+});
+
 // Adding smooth scrolling to anchor links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
