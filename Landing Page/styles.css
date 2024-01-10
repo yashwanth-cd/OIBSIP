@@ -154,9 +154,6 @@ label {
   line-height: 150%;
   letter-spacing: 0.9px;
 
-  @media (max-width: 680px) {
-    font-size: 14px;
-  }
 }
 .section-2 img {
   height: 300px;
